@@ -8,7 +8,7 @@ url = 0  # L'indice 0 représente la première webcam. Vous pouvez ajuster cela 
 
 def run1():
     cv2.namedWindow("live transmission", cv2.WINDOW_AUTOSIZE)
-    cap = cv2.VideoCapture(url, cv2.CAP_DSHOW)
+    cap = cv2.VideoCapture(url)
     
     while True:
         ret, im = cap.read()
